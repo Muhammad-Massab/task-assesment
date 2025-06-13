@@ -17,13 +17,13 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
       useFactory: (config: ConfigService) => ({
         type: 'postgres',
         host: config.get<string>('DB_HOST'),
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         port: parseInt(config.get<string>('DB_PORT') ?? '5432', 10),
         username: config.get<string>('DB_USERNAME'),
         password: config.get<string>('DB_PASSWORD'),
         database: config.get<string>('DB_NAME'),
         entities: [__dirname + '/../**/*.entity{.ts,.js}'],
         synchronize: true,
+        ssl: false,
       }),
     }),
   ],
