@@ -77,13 +77,13 @@ npm run dev
 Live URL for frontend
 
 ```bash
-http://35.178.81.153:3000/
+http://52.56.164.200:3000/
 ```
 
 Live URL for backend
 
 ```bash
-http://35.178.81.153:4000/graphql
+http://52.56.164.200:4000/graphql
 ```
 
 ## Implemented
